@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Burloloy</title>
+<style>
+    html, body{
+       margin: 0;
+       padding: 0;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 16px;
+   }
+    .container{
+       width: 960px;
+       margin: 0 auto;
+       background-color: #ddd;
+       border:  1px solid rgb(104, 199, 243);
+   }
+  header{
+       padding: 20px;
+       color: #eee;
+       margin-right: 0px;
+       text-align: right;
+   }
+   header, footer{
+       background-color: rgb(88, 189, 189);
+   }
+   .side{
+    float: left;
+    width: 150px;
+   }
+   .side ul{
+       margin: 0;
+       padding: 0;
+       list-style: none;
+   }
+   ul li a{
+       display: block;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       padding-left: 0;
+       padding-right: 0;
+       text-align: center;
+       text-decoration: none;
+       color: #333; 
+       border-bottom: 1px solid rgb(151, 180, 233);
+   }
+   a:hover{
+      color: #eee;
+      background-color: rgb(106, 236, 197);
+   }
+   .main{
+      margin-left: 150px;
+      background-color: #eee;
+      padding: 20px;
+   }
+    h1 .main{
+     margin-top: 0;
+   }
+    p .main{
+      margin: 0;
+      padding-bottom: 10px;
+   }
+    footer{
+      float: none;
+      color: #eee;
+      text-align: center;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 0;
+      padding-right: 0;
+   }
+   footer .love{
+      color: pink;
+   }
+   
+
+   * {
+  box-sizing: border-box;
+}
+ 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #7EC855;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+</style>
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+  <div class="container">
+    <header><img src="image/pnglogo.png" alt="Image" height="200" width="915">
+        <form action=" " method="GET" enctype="application/x-www-form-urlencoded">
+        <input type="search" name="q">
+        <button type="submit">search</button></header>
+    <div class="side">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="loginAccount.html">Sign In</a></li>
+        <li><a href=" https://www.google.ca/search" method="GET" enctype="application/x-www-form-urlencoded">Log out</a></li>
+        <li><a href="createUser.html">Create Account</a></li>
+        <li><a href="https://www.facebook.com/Burloloy-1042721142532678/?__tn__=%2Cd%2CP-R&eid=ARDK_Xd_za8FjjiTiuQpGqHnC5ApPk8weWDpiabkmpWJy5paMZiXvYmilvP6YhmuNafq0E3AwmMZJsVC" method="get" enctype="application/x-www-form-urlencoded">facebook Account</a></li>
+        <li><a href="privcyTerms.html">Privacy & Terms</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+
+      </ul>
+    </div>
+    <div class="main">
+        <div id="Gallery">
+  <h2 style="text-align:center">A totally wonderful product that matches your style</h2>
+<div class="card">
+  <img src="image/thumbs/7.jpg" alt="Denim Jeans" style="width:100%">
+  <h3>Hand made jewelries, very affordable and fashionable</h3>
+  <p class="price">$8.99</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<br>
+<br>
+            </div>
+      </div>
+    <footer>
+
+      <a href="home.html">Home</a> <a href="#">About us</a> <a href="home.html">Prouducts</a> <a href="#">Blogs</a> <a href="contact.html">Contact</a> 
+    </footer>
+  </div>
+</body>
+</html>

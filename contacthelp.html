@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Form</title>
+<style>
+    html, body{
+       margin: 0;
+       padding: 0;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 16px;
+       background-color: #7EC855;
+       
+   }
+    .container{
+       width: 960px;
+       margin: 0 auto;
+       background-color: #ddd;
+       border:  1px solid rgb(104, 199, 243);
+   }
+  header{
+       padding: 20px;
+       color: #eee;
+       text-align: right;
+   }
+   header, footer{
+       background-color: rgb(88, 189, 189);
+   }
+   .side{
+    float: left;
+    width: 150px;
+   }
+   .side ul{
+       margin: 0;
+       padding: 0;
+       list-style: none;
+   }
+   ul li a{
+       display: block;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       padding-left: 0;
+       padding-right: 0;
+       text-align: center;
+       text-decoration: none;
+       color: #333; 
+       border-bottom: 1px solid rgb(151, 180, 233);
+   }
+   a:hover{
+      color: #eee;
+      background-color: rgb(106, 236, 197);
+   }
+   .main{
+      margin-left: 150px;
+      background-color: #eee;
+      padding: 20px;
+   }
+    h1 .main{
+     margin-top: 0;
+   }
+    p .main{
+      margin: 0;
+      padding-bottom: 10px;
+   }
+    footer{
+      float: none;
+      color: #eee;
+      text-align: center;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 0;
+      padding-right: 0;
+   }
+   footer .love{
+      color: pink;
+   }
+</style>
+<script>
+    window.alert('Message successfully send')
+</script>
+</head>
+<body>
+  <div class="container">
+    <header><img src="image/pnglogo.png" alt="Image" height="200" width="915">
+        <form action=" https://www.google.ca/search" method="GET" enctype="application/x-www-form-urlencoded">
+        <input type="search" name="q">
+        <button type="submit">search</button></header>
+    <div class="side">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="signIn.html">Sign In</a></li>
+            <li><a href=" https://www.google.ca/search" method="GET" enctype="application/x-www-form-urlencoded">Log out</a></li>
+            <li><a href="createUser.html">Create Account</a></li>
+            <li><a href="https://www.facebook.com/Burloloy-1042721142532678/?__tn__=%2Cd%2CP-R&eid=ARDK_Xd_za8FjjiTiuQpGqHnC5ApPk8weWDpiabkmpWJy5paMZiXvYmilvP6YhmuNafq0E3AwmMZJsVC" method="get" enctype="application/x-www-form-urlencoded">facebook Account</a></li>
+            <li><a href="privcyTerms.html">Privacy & Terms</a></li>
+            <li><a href="#">Country/Change</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+    
+          </ul>
+    </div>
+    <div class="main">
+      <div id="Gallery">
+          <h3>Contact Us</h3>
+      <p><h3>Get immediate assistance by giving us a call and talk to our friendly customer service representatives.</h3> <br>
+          <input type="image" img src="image/phone.png" width="70" height="70" > 
+            <b>(204) 951 - 4444</b> <br>
+            <input type="image" img src="image/ml.png" width="70" height="70" > 
+            <b>burloloy@gmail.com</b><br>
+          </p>
+    <div id="after_submit"></div>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="name">Your name:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email">Your email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Your message:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+    
+    <input id="submit_button" type="submit" value="Send email" />
+</form>
+<p><h3>Available 7:00am - 12:00am</h3></p>    
+            </div>
+    </div>
+    <footer>
+
+      <a href="home.html">Home</a> <a href="aboutUs.html">About us</a> <a href="home.html">Products</a> <a href="#">Blogs</a> <a href="contact.html">Contact</a> 
+    </footer>
+  </div>
+</body>
+</html>
