@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign In</title>
+<style>
+    html, body{
+       margin: 0;
+       padding: 0;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 16px;
+       background-color: #7EC855;
+   }
+    .container{
+       width: 960px;
+       margin: 0 auto;
+       background-color: #ddd;
+       border:  1px solid rgb(104, 199, 243);
+   }
+  header{
+       padding: 20px;
+       color: #eee;
+       text-align: right;
+   }
+   header, footer{
+       background-color: rgb(88, 189, 189);
+   }
+   .side{
+    float: left;
+    width: 150px;
+   }
+   .side ul{
+       margin: 0;
+       padding: 0;
+       list-style: none;
+   }
+   ul li a{
+       display: block;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       padding-left: 0;
+       padding-right: 0;
+       text-align: center;
+       text-decoration: none;
+       color: #333; 
+       border-bottom: 1px solid rgb(151, 180, 233);
+   }
+   a:hover{
+      color: #eee;
+      background-color: rgb(106, 236, 197);
+   }
+   .main{
+      margin-left: 150px;
+      background-color: #eee;
+      padding: 20px;
+   }
+    h1 .main{
+     margin-top: 0;
+   }
+    p .main{
+      margin: 0;
+      padding-bottom: 10px;
+   }
+    footer{
+      float: none;
+      color: #eee;
+      text-align: center;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 0;
+      padding-right: 0;
+   }
+   footer .love{
+      color: pink;
+   }
+   form{
+            padding: 20px 5px 5px 5px;
+            text-align: right;
+            border-bottom: 1px solid #ddd;
+        }
+        
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header><img src="image/pnglogo.png" alt="Image" height="200" width="915">
+        <form action=" https://www.google.ca/search" method="GET" enctype="application/x-www-form-urlencoded">
+        <input type="search" name="q">
+        <button type="submit">search</button></header>
+    <div class="side">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="loginAccount.html">Sign In</a></li>
+        <li><a href=" https://www.google.ca/search" method="GET" enctype="application/x-www-form-urlencoded">Log out</a></li>
+        <li><a href="createUser.html">Create Account</a></li>
+        <li><a href="https://www.facebook.com/Burloloy-1042721142532678/?__tn__=%2Cd%2CP-R&eid=ARDK_Xd_za8FjjiTiuQpGqHnC5ApPk8weWDpiabkmpWJy5paMZiXvYmilvP6YhmuNafq0E3AwmMZJsVC" method="get" enctype="application/x-www-form-urlencoded">facebook Account</a></li>
+        
+        <li><a href="privcyTerms.html">Privacy & Terms</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+
+      </ul>
+    </div>
+    <div class="main">
+        <div id="Gallery">
+            <h3>Sign In</h3>
+  <form action="creat_user.html" method="GET" enctype="application/x-www-form-urlencoded" >
+    <fieldset>
+     <legend><h3>User Form</h3></legend>
+    <label>User Name:</label>
+    <input type="text" name="user_name"  placeholder="Enter username" size="30" maxlength="30" required >
+    <label>Password:</label>
+    <input type="password" name="password" id="password"placeholder="Enter password" size="30" maxlength="8" required> <br>
+    <form>
+      <input type="hidden" name="userid" value="2300" >
+</form>
+<br>
+<form action="homepage.html" method="get" enctype="application/x-www-form-urlencoded">
+<input type="image" img src="image/customericon.jpg" width="170" height="70" name="sendrequest">
+<br>
+            </div>
+    </div>
+    <footer>
+
+      <a href="home.html">Home</a> <a href="aboutUs.html">About us</a> <a href="home.html">Products</a> <a href="#">Blogs</a> <a href="contact.html">Contact</a> 
+    </footer>
+  </div>
+</body>
+</html>
